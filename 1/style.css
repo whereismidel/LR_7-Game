@@ -1,0 +1,86 @@
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: navy;
+}
+table {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid green;
+  padding: 3px;
+}
+.winner h1 {
+  margin: 50px;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.game_field {
+  width: 480px;
+  height: 490px;
+  margin: 0 auto;
+  position: relative;
+}
+.game_field .cell {
+  background-color: aliceblue;
+
+  cursor: pointer;
+  float: left;
+  text-align: center;
+
+  font-size: 100px;
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.line {
+  margin: 0 auto;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+}
+.line.horizontal{
+  width: 450px;
+  border-top: 20px solid #b61616;
+  top: 70px; /* + 160 px */
+  visibility: hidden;
+}
+.line.vertical{
+  border-left: 20px solid #b61616;
+  width: 0px;
+  height: 450px;
+
+  left: -160px; /* + 160 px */
+  visibility: hidden;
+}
+.line.diagonal{
+  width: 635px;
+  border-top: 20px solid #b61616;
+
+  transform: rotate(45deg);
+  
+  bottom: 240px;
+  right: 80px;
+  visibility: hidden;
+}
+
+img.move {
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+  border: 0px;
+}
