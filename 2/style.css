@@ -1,0 +1,53 @@
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: navy;
+}
+
+.title h1 {
+  margin: 50px;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.wrapper {
+  width: 960px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper .cell {
+  background-color: aliceblue;
+
+  cursor: pointer;
+  float: left;
+
+  height: 150px;
+  width: 150px;
+
+  margin: 5px;
+  border-radius: 20px;
+
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.cell :hover{
+  background-color: aquamarine;
+}
